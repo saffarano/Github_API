@@ -1,0 +1,56 @@
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=EB+Garamond&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  * {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color:antiquewhite
+}
+
+/* Header Styling */
+header {
+    font-family: "Montserrat", sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+table {
+    margin: 5px;
+}
+
+td {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+th {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(53, 188, 188);
+}
+
+table tr:nth-child(odd){
+    background-color: rgb(241, 208, 208);
+}
+
+table tr:nth-child(even){
+    background-color: rgb(146, 172, 222);
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: beige;
+    color: black;
+    padding: 5px 10px;
+}
+
+.button:hover {
+    background-color: blueviolet;
+}

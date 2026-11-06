@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Git Repos</title>
+</head>
+
+<body>
+    <h1>Git Repos by User</h1>
+    <br>
+    <p>Enter the GitHub username and click 'Submit' to see that user's Repositories and corresponding information</p>
+    <form action="/search" method="POST">
+        <label for="username">Enter GitHub Username:</label>
+        <input type="text" id="username" name="username" autofocus>
+        <button type="Submit">Submit</button>
+    </form>
+
+    {% if repos %}
+    <h2>GitHub Repos for: {{ username }}</h2>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>git_url</th>
+            <th>Language</th>
+            <th>Stargazers Count</th>
+        </thead>
+        <tbody>
+        {% for repo in repos %} <!-- Iterate through list of repos-->
+            <tr>
+            {% for key, value in repo.items() %}
+                <!--Cycles through all passed through keys and slots them in table:
+                Name, Desc, Git URL, Lang, Star Count-->
+                <td>{{ value }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+
+</body>
+</html>
