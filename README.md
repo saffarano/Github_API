@@ -14,3 +14,15 @@ Web application accepts a Github username and uses the GitHub API that user's pu
 - python gitrepo.py
 
 ## Screenshots:
+
+- Home Page:
+![Home Page](https://github.com/saffarano/Github_API/blob/main/Images/Homepage.png)
+
+- Repositores:
+![Repositories](https://github.com/saffarano/Github_API/blob/main/Images/Repos.png)
+
+- New Search
+![New Search](https://github.com/saffarano/Github_API/blob/main/Images/Next_Username.png)
+
+- Updated View:
+![Updated View](https://github.com/saffarano/Github_API/blob/main/Images/Updated_page.png)
